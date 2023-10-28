@@ -35,6 +35,7 @@ jobs:
       - name: Upload files to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          ftp-server: ftp:${{ secrets.FTP_HOST }}/rs.mo5.com
+          ftp-server: ftp:${{ secrets.FTP_HOST }}
+          server-dir: /rs.mo5.com
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
