@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Roboto;
+  src: url('/public/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url('/public/fonts/BebasNeue-Regular.otf') format('truetype');
+  font-weight: normal;
+}
+
+@layer base {
+  html {
+    font-family: BebasNeue, cursive;
+  }
+
+  body {
+    color: theme('colors.mo5.text');
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: AmaticSC, cursive;
+    color: theme('colors.mo5.primary');
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  a {
+    color: theme('colors.mo5.primary');
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: theme('colors.mo5.secondary');
+  }
+
+  * {
+    box-sizing: border-box;
+    scrollbar-color: theme('colors.mo5.secondary') theme('colors.mo5.accent');
+    scrollbar-width: thin;
+    outline: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: theme('colors.mo5.bg');
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.mo5.secondary');
+    transition: 200ms ease-in-out;
+  }
+
+  h1:before {
+    content: '- ';
+  }
+
+  h1:after {
+    content: ' -';
+  }
+
+  @keyframes bounce {
+    0%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animation-delay-1 {
+    animation-delay: 0.1s !important;
+  }
+
+  .animation-delay-2 {
+    animation-delay: 0.2s !important;
+  }
+
+  .animation-delay-3 {
+    animation-delay: 0.3s !important;
+  }
+
+  .animation-delay-4 {
+    animation-delay: 0.4s !important;
+  }
+
+  .animation-delay-5 {
+    animation-delay: 0.5s !important;
+  }
+  svg {
+    height: 1.5rem;
+    width: auto;
+  }
+
+  .link-icon svg {
+    height: 16px;
+    width: auto;
+  }
+
+  b {
+    color: theme('colors.mo5.accent');
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
