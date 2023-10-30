@@ -3,10 +3,6 @@ import { Modal } from './modal';
 
 const links = [
   {
-    url: 'https://micral.mo5.com/',
-    title: 'Notre campagne de financement participatif (Micral)',
-  },
-  {
     modal: (
       <div className="font-roboto font-normal">
         <p>
@@ -25,8 +21,12 @@ const links = [
     Icon: QuestionIcon,
   },
   {
+    url: 'https://micral.mo5.com/',
+    title: 'Notre campagne de financement participatif (Micral)',
+  },
+  {
     url: 'https://mo5.com/',
-    title: 'Visitez le site du MO5.COM',
+    title: "Visitez le site de l'association",
   },
   {
     url: 'https://mo5.com/don/',
@@ -38,7 +38,7 @@ const links = [
   },
   {
     url: 'https://mag.mo5.com/',
-    title: "Le Mag' MO5.COM",
+    title: "Le Mag' MO5",
   },
 
   {
