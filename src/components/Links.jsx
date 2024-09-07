@@ -21,10 +21,6 @@ const links = [
     Icon: QuestionIcon,
   },
   {
-    url: 'https://micral.mo5.com/',
-    title: 'Notre campagne de financement participatif (Micral)',
-  },
-  {
     url: 'https://mo5.com/',
     title: "Visitez le site de l'association",
   },
