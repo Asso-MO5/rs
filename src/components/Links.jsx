@@ -41,6 +41,10 @@ const links = [
     url: 'https://mo5.com/contact/',
     title: 'Contactez-nous',
   },
+  {
+    url: 'https://concours.mo5.com/concours/',
+    title: 'Concours Art To Play',
+  },
 ];
 
 export function Links() {
